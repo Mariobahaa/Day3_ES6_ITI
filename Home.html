@@ -1,13 +1,19 @@
 <! DOCTYPE html>
 <html>
     <head>
-        
-        
-    </head>
-    <body>
-        <canvas width="1000px" height="1000px" id="cnv"></canvas>
-        <script src = "./shapes.js" type="module">
-           
-        </script>
-    </body>
-</html>
+
+
+</head>
+
+<body>
+    <canvas width="1000px" height="1000px" id="cnv"></canvas>
+    <script src="./shapes.js" type="module">
+
+    </script>
+    <script type = "module">
+        import * as shapes from './shapes.js';
+        let t = new shapes.triangle(0, 0, 0, 100, 100, 100);
+        t.draw();
+        console.log(t.toString());
+    </script>
+</body></html>

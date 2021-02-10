@@ -1,6 +1,6 @@
 import {polygon} from "./polygon.js"
 
-class rectangle extends polygon {
+export class rectangle extends polygon {
     constructor(x1, y1, x2, y2) {
         super(x1, y1, x2, y2);
     }
@@ -33,7 +33,7 @@ class square extends polygon {
     }
 }
 
-class circle extends polygon {
+export class circle extends polygon {
     constructor(x1, y1, radius) {
         super(x1, y1, null, null);
         this.radius = radius;
@@ -52,7 +52,7 @@ class circle extends polygon {
     }
 }
 
-class triangle extends polygon {
+export class triangle extends polygon {
     constructor(x1, y1, x2, y2, x3, y3) {
         super(x1, y1, x2, y2);
         this.x3 = x3;
@@ -76,6 +76,4 @@ class triangle extends polygon {
     }
 }
 
-let t = new triangle(0,0,0,100,100,100);
-t.draw();
-console.log(t.toString());
+
